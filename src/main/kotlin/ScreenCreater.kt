@@ -23,7 +23,7 @@ open class ScreenCreater {
         println("Введите название для архива")
         var nameOfNew:String =""
         while (true){
-            nameOfNew = scanner.nextLine()
+            nameOfNew = scanner.nextLine().trim()
             if (nameOfNew.length>3) break
             println("Слишком короткое название")
         }
@@ -36,14 +36,14 @@ open class ScreenCreater {
         var nameOfNew = ""
         var text = ""
         while (true){
-            nameOfNew = scanner.nextLine()
+            nameOfNew = scanner.nextLine().trim()
             if (nameOfNew.length>3) break
             println("Слишком короткое название")
         }
         println("Запишите что-то в замету \"$nameOfNew\"")
 
         while (true){
-            text = scanner.nextLine()
+            text = scanner.nextLine().trim()
             if (text.length>=1) break
             println("Заметка не может оставаться пустой")
         }
