@@ -6,9 +6,9 @@ import java.util.Scanner
 open class ScreenCreater {
     private val scanner = Scanner(System.`in`)
 
-    open fun doScreen(){}
-    open fun doScreen(archiv: Archiv){}
-    open fun doScreen(zametka:Zametka){}
+    open fun doScreen()=Unit
+    open fun doScreen(archiv: Archiv)=Unit
+    open fun doScreen(zametka:Zametka)=Unit
 
 
    protected fun <T: OriginOfArchivAndZametka>begining(welcome:String, create:String, list:ArrayList<T>){

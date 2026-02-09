@@ -1,12 +1,9 @@
-import ArchivScreen.n.BYE
-import ArchivScreen.n.CREATE
-import ArchivScreen.n.SPISOKOF
-import ArchivScreen.n.WELCOME
+
 import types.Archiv
 
 class ArchivScreen():ScreenCreater() {
 
-    object n {
+    companion object {
         const val WELCOME = "Архив"
         const val SPISOKOF = "Список заметок"
         const val CREATE = "заметку"

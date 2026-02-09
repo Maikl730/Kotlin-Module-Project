@@ -1,14 +1,11 @@
-import FirstScreen.n.BYE
-import FirstScreen.n.CREATE
-import FirstScreen.n.SPISOKOF
-import FirstScreen.n.WELCOME
+
 import types.Archiv
 import java.util.Scanner
 
 
 class FirstScreen:ScreenCreater() {
 
-object n{
+companion object{
     const val WELCOME = "Ваши заметки"
     const val SPISOKOF = "Список архивов"
     const val CREATE = "архив"
